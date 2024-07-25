@@ -1,0 +1,28 @@
+double salario;
+double novosalario;
+double aumento;
+double bonus;
+
+Console.WriteLine("Neste programa iremos dar um bônus no salário.");
+Console.Write("Digite o seu salário: ");
+salario = Convert.ToDouble(Console.ReadLine());
+if (salario < 2000)
+{
+    bonus = 0.10;
+    aumento = salario * bonus;
+    novosalario = salario + aumento;
+    Console.WriteLine($"Você vai ganhar um bônus de 10%!\nSeu novo salário é R${novosalario}");
+}
+else if (salario >= 2000)
+{
+    bonus = 0.5;
+    aumento = salario * bonus;
+    novosalario = salario + aumento;
+    Console.WriteLine($"Você vai ganhar um bônus de 5%!\nSeu novo salário é R${novosalario}");
+}
+else 
+{
+   
+    Console.WriteLine("Algo deu errado. Tente novamente");
+}
+Console.ReadKey();
