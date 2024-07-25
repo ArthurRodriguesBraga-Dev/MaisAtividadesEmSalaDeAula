@@ -1,0 +1,17 @@
+int numero;
+Console.WriteLine("Este programa vai ler um número inteiro e vamos verificar se ele é primo ou não");
+Console.Write("Digite o número: ");
+numero = Convert.ToInt32(Console.ReadLine());
+if (numero <= 1)
+{
+    Console.WriteLine("O número não é primo");
+}
+else if( numero == 2 && numero == 3 && numero == 5 && numero == 7 && numero % 1 == 0 && numero % numero == 0 || numero % 2 !=0 || numero % 3 != 0 || numero % 5 != 0 || numero % 7 != 0)
+{
+    Console.WriteLine("O número é primo!");
+}
+else
+{
+    Console.WriteLine("Algo deu errado. Tente novamente. ");
+}
+Console.ReadKey();
